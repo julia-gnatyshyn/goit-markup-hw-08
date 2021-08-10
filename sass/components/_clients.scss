@@ -1,0 +1,32 @@
+.clients-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.clients-list__link {
+  fill: var(--text-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}

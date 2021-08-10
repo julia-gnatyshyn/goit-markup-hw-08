@@ -1,0 +1,37 @@
+.sub-form {
+  display: flex;
+}
+
+.sub-form__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+.sub-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sub-form__input:focus {
+  color: var(--white-color);
+}
+
+.sub-form__input:hover {
+  cursor: pointer;
+}
+
+.send-button {
+  padding: 10px 28px 10px 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-button .send-icon {
+  margin-left: 10px;
+  fill: var(--white-color);
+}

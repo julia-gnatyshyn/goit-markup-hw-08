@@ -1,0 +1,30 @@
+.description-container {
+  padding-top: 89px;
+  padding-bottom: 94px;
+}
+
+.advantages {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.advantages__item {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.advantages__pre-title {
+  margin-bottom: 10px;
+}
+
+.advantages__thumb {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
