@@ -5,19 +5,20 @@
 @import "./base/base";
 @import "./base/container";
 @import "./common/common";
-@import "./common/social";
 
-@import "./components/header";
-@import "./components/hero";
-@import "./components/description";
-@import "./components/information";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/description";
+@import "./layout/information";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/footer";
+
+@import "./components/social";
 @import "./components/footer-join-us";
 @import "./components/subscribe-form";
 @import "./components/backdrop";
+@import "./components/modal";
 @import "./components/modal-form";
-
-@import "./components/portfolio";
 @import "./components/p-buttons";

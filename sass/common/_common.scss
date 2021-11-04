@@ -4,9 +4,11 @@
   line-height: 1.166;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
-
 .pre-title {
   font-weight: bold;
   font-size: 14px;
@@ -61,13 +63,16 @@
   color: var(--text-color);
 }
 
-.footer-title {
+.footer-title,
+.footer-title_join {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-top: 12px;
+  // margin-top: 12px;
   margin-bottom: 20px;
+  margin-top: 60px;
   color: var(--white-color);
+  text-align: center;
 }

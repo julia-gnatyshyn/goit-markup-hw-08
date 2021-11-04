@@ -1,13 +1,14 @@
 .social-list {
   display: flex;
   align-items: center;
-  margin-right: 93px;
+  justify-content: center;
+  // margin-right: 93px;
 }
 
-.social__link--footer {
+.social__link_footer {
   fill: var(--white-color);
 }
 
-.social__item--footer {
+.social__item_footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
