@@ -70,9 +70,14 @@
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  // margin-top: 12px;
   margin-bottom: 20px;
   margin-top: 60px;
   color: var(--white-color);
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+  }
 }

@@ -1,8 +1,12 @@
 .social-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  // margin-right: 93px;
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .social__link_footer {
