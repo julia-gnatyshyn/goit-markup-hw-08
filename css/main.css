@@ -1246,7 +1246,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects__content.first-p {
-    padding-bottom: 54px;
+    padding-bottom: 56px;
   }
 }
 
