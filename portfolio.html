@@ -14,7 +14,13 @@
 <header class="header">
     <div class="container header-container">
         <nav class="navigation">
-            <a class="logo" href="./index.html">Web<span class="logo-1">Studio</span></a>
+            <a class="logo header__logo" href="./index.html">Web<span class="logo-1">Studio</span></a>
+            <button type="button" class="menu-button">
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                <use class="icon-cross" href="./images/icons.svg#menu-close"></use>
+                </svg>
+            </button>
             <ul class="nav-list">
                 <li class="nav-list__item "><a class="nav-list__link" href="./index.html">Студия</a></li>
                 <li class="nav-list__item"><a class="nav-list__link active" href="./portfolio.html">Портфолио</a></li>
@@ -25,13 +31,13 @@
         <ul class="contact header-contact">
             <li class="contact__item" lang="en">
                 <a class="contact__link" href="mailto:info@devstudio.com">
-                    <svg class="contact__icon" width="16px" height="12px">
+                    <svg class="contact__icon contact__icon_mail " width="16px" height="12px">
                         <use href="./images/icons.svg#icon-mail"> </use>
                     </svg> info@devstudio.com</a>
             </li>
             <li class="contact__item">
                 <a class="contact__link" href="tel:+380961111111">
-                    <svg class="contact__icon" width="10px" height="16px">
+                    <svg class="contact__icon contact__icon_tel" width="10px" height="16px">
                         <use href="./images/icons.svg#icon-phone"> </use>
                     </svg>+38 096 111 11 11</a>
             </li>
@@ -65,7 +71,7 @@
                             цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p></div>
                         
-                             <div class="projects__content">
+                             <div class="projects__content first-p">
 
                        <h3 class="projects__content-title">Технокряк</h3>
                     <p class="projects__content-text">Веб-сайт</p>

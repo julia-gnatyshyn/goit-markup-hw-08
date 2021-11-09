@@ -81,6 +81,13 @@
 }
 
 .modal-form__checkbox-label {
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-size: 12px;
+  }
+
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -114,6 +121,13 @@
 }
 
 .agreement {
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-size: 12px;
+  }
+
   text-decoration: underline;
   color: var(--accent-color);
 }
@@ -123,8 +137,8 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  right: 10px;
   border-radius: 50%;
 }
 

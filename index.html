@@ -13,10 +13,23 @@
 </head>
 <body>
     <!--Шапка сайта-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
             <nav class="navigation">
             <a class="logo header__logo" href="./index.html">Web<span class="logo-1">Studio</span></a>
+            <button type="button" class="menu-button is-open" menu-open-btn >  
+                <svg 
+                width="24px"
+                height="16px"
+                aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                <use class="icon-cross" href="./images/icons.svg#menu-close"></use>
+                </svg>
+               
+            </button>
+<div class="mobile-menu-container is-open" js-menu-container>
+    меню </div>
+
             <ul class="nav-list">
                 <li class="nav-list__item "><a class="nav-list__link active" href="./index.html" >Студия</a></li>
                 <li class="nav-list__item"><a class="nav-list__link" href="./portfolio.html">Портфолио</a></li>
@@ -27,31 +40,31 @@
             <ul class="contact header-contact">
                 <li class="contact__item" lang="en">
                     <a class="contact__link" href="mailto:info@devstudio.com"> 
-                        <svg class="contact__icon" width="16px"
+                        <svg class="contact__icon contact__icon_mail " width="16px"
                             height="12px">
                             <use href="./images/icons.svg#icon-mail"> </use>
                         </svg> info@devstudio.com</a>
                    </li>
                 <li class="contact__item">
                     <a class="contact__link" href="tel:+380961111111">
-                    <svg class="contact__icon" width="10px" height="16px">
+                    <svg class="contact__icon contact__icon_tel" width="10px" height="16px">
                         <use href="./images/icons.svg#icon-phone"> </use>
                     </svg>+38 096 111 11 11</a>
             </li>     
             </ul>
         
         </div>
-    </header> -->
+    </header>
         
     <main> 
 
     <!--Hero-->
-    <!-- <section class="hero">
+    <section class="hero">
         <div class="container hero-container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button data-modal-open class="hero-button button" type="button">Заказать услугу</button> 
         </div>
-    </section> -->
+    </section>
 
     <!--Advantages-->
     <section class="description">
@@ -105,11 +118,28 @@
         <div class="container info-container">
         <h2 class="title">Чем мы занимаемся</h2>
         <ul class="info-list">
-            <li class="info-list__item"><a class="info-list__link" href=""><img src="./images/img.jpg" alt="Верстка" width="370">
+            <li class="info-list__item"><a class="info-list__link" href="">
+                <picture>
+                    <source srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x" 
+                    media="(min-width:1200px)">
+                    <img src="./images/box1.jpg" alt="Верстка" width="370">
+                </picture>
+               
             <h3 class="info-list__pre-title pre-title">Десктопные приложения</h3></a></li>
-            <li class="info-list__item"><a class="info-list__link" href=""><img src="./images/box2.jpg" alt="Программирование" width="370">
+
+            <li class="info-list__item"><a class="info-list__link" href="">
+                <picture>
+                    <source srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x" 
+                    media="(min-width:1200px)">
+                <img src="./images/box2.jpg" alt="Программирование" width="370">
+                </picture>
             <h3 class="info-list__pre-title pre-title ">Мобильные приложения</h3></a></li>
-            <li class="info-list__item"><a class="info-list__link" href=""><img src="./images/box3.jpg" alt="Дизайн" width="370">
+            
+            <li class="info-list__item"><a class="info-list__link" href="">
+                <picture>
+                    <source srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x" media="(min-width:1200px)">
+                    <img src="./images/box3.jpg" alt="Дизайн" width="370">
+                </picture>
             <h3 class="info-list__pre-title pre-title">Дизайнерские решения</h3></a></li>
         </ul>
         </div>
@@ -121,7 +151,16 @@
         <h2 class="title">Наша команда</h2>
         <ul class="workers">
             <li  class="workers__person">
-                <img src="./images/img1.jpg" alt="Фото мужчины" width="270">
+                <picture>
+                    <source srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x" 
+                    media="(min-width:1200px)">
+                    <source srcset="./images/img1-tb.jpg 1x, ./images/img1-tb-2x.jpg 2x" 
+                    media="(min-width:768px)">
+                    <source srcset="./images/img1-mob.jpg 1x, ./images/img1-mob-2x.jpg 2x" 
+                    media="(min-width:480px)">
+                    <img src="./images/img1.jpg" alt="Фото мужчины" >
+                </picture>
+                
                 <div class="workers__person-information">
                 <p class="workers__name">Игорь Демьяненко</p>
                 <h3 class="workers__job" lang="en">Product Designer</h3>
@@ -154,8 +193,16 @@
                 
             </li>
             <li class="workers__person">
-               
-                <img src="./images/img2.jpg" alt="Фото женщины" width="270">
+                <picture>
+                    <source srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x" 
+                    media="(min-width:1200px)">
+                    <source srcset="./images/img2-tb.jpg 1x, ./images/img2-tb-2x.jpg 2x"
+                     media="(min-width:768px)">
+                    <source srcset="./images/img2-mob.jpg 1x, ./images/img2-mob-2x.jpg 2x"
+                     media="(min-width:480px)">
+                    <img src="./images/img2.jpg" alt="Фото женщины" >
+                </picture>
+                
                 <div class="workers__person-information">
                 <p class="workers__name">Ольга Репина</p>
                 <h3 class="workers__job" lang="en">Frontend Developer</h3>
@@ -187,8 +234,16 @@
                 </div> 
             </li>
             <li class="workers__person">
-                
-                <img src="./images/img3.jpg" alt="Фото мужчины" width="270">
+                <picture>
+                    <source srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x" 
+                    media="(min-width:1200px)">
+                    <source srcset="./images/img3-tb.jpg 1x, ./images/img3-tb-2x.jpg 2x"
+                     media="(min-width:768px)">
+                    <source srcset="./images/img3-mob.jpg 1x, ./images/img3-mob-2x.jpg 2x" 
+                    media="(min-width:480px)">
+                    <img src="./images/img3.jpg" alt="Фото мужчины">
+                </picture>
+               
                 <div class="workers__person-information">
                 <p class="workers__name">Николай Тарасов</p>
                 <h3 class="workers__job" lang="en">Marketing</h3>
@@ -220,8 +275,16 @@
                 </div>        
             </li>
             <li class="workers__person">
-            
-                <img src="./images/img4.jpg" alt="Фото мужчины" width="270">
+            <picture>
+                <source srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
+                 media="(min-width:1200px)">
+                <source srcset="./images/img4-tb.jpg 1x, ./images/img4-tb-2x.jpg 2x" 
+                media="(min-width:768px)">
+                <source srcset="./images/img4-mob.jpg 1x, ./images/img4-mob-2x.jpg 2x" 
+                media="(min-width:480px)">
+                <img src="./images/img4.jpg" alt="Фото мужчины" >
+            </picture>
+               
                 <div class="workers__person-information">
                 <p class="workers__name">Михаил Ермаков</p>
                 <h3 class="workers__job" lang="en">UI Designer</h3>
@@ -377,7 +440,7 @@
         </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal >
+    <div class="backdrop is-hidden" data-modal >
         <div class="modal"  >
         <button data-modal-close type="button" > 
             <svg class="modal__close" width="30px" height="30px">
@@ -441,10 +504,10 @@
 
         </form>
         </div>
-    </div> -->
-
-<script src="./js/modal.js" type="module"></script> 
-<script defer scr="./js/mobile-menu.js"></script>
+    </div>
+    
+    <script src="./js/modal.js" type="module"></script> 
+    <script defer src="./js/mobile-menu.js"></script>
 
 </body>
 </html>
