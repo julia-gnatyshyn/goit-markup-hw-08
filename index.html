@@ -17,18 +17,49 @@
         <div class="container header-container">
             <nav class="navigation">
             <a class="logo header__logo" href="./index.html">Web<span class="logo-1">Studio</span></a>
-            <button type="button" class="menu-button is-open" menu-open-btn >  
+            <button type="button" class="menu-open-btn "  >  
                 <svg 
                 width="24px"
                 height="16px"
                 aria-label="Переключатель мобильного меню">
                 <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-                <use class="icon-cross" href="./images/icons.svg#menu-close"></use>
-                </svg>
+               </svg>
                
             </button>
-<div class="mobile-menu-container is-open" js-menu-container>
-    меню </div>
+
+<div class="mob-menu" >
+    <button type="button" class="menu-close-btn">
+        <svg width="18.67px" height="18.67px" aria-label="Переключатель мобильного меню">
+             <use class="icon-cross" href="./images/icons.svg#menu-close"></use>
+        </svg>
+        </button>
+    <div class="mob-menu-content">
+        <div class="mob-menu-content-info">
+        <ul class="mob-menu-content__items">
+        <li class="mob-menu-content__item "><a class="mob-menu-content__link" href="./index.html">Студия</a></li>
+        <li class="mob-menu-content__item"><a class="mob-menu-content__link" href="./portfolio.html">Портфолио</a></li>
+        <li class="mob-menu-content__item"><a class="mob-menu-content__link" href="#address">Контакты</a></li>
+        </ul>
+
+        <ul class="mob-menu-contact__items">
+            <li class="mob-menu-contact__tel" lang="en">
+                <a class="mob-menu-contact__link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mob-menu-contact__mail">
+                <a class="mob-menu-contact__link" href="mailto:info@devstudio.com">info@devstudio.com </a>
+            </li>
+        </ul>
+
+    </div>
+    
+    <ul class="mob-menu-social-list">
+        <li class="mob-menu-social-list__item"><a href="/">Instagram</a></li>
+        <li class="mob-menu-social-list__item"><a href="/">Twitter</a></li>
+        <li class="mob-menu-social-list__item"><a href="/">Facebook</a></li>
+        <li class="mob-menu-social-list__item"><a href="/">LinkedIn</a></li>
+    </ul>
+ </div>
+</div>
 
             <ul class="nav-list">
                 <li class="nav-list__item "><a class="nav-list__link active" href="./index.html" >Студия</a></li>
@@ -466,7 +497,7 @@
             <label  class="modal-form__label">
                 Телефон
             <span class="modal-form__field">
-            <input type="tel" class="modal-form__input" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11"
+            <input type="tel" class="modal-form__input" name="phone" required pattern="[0-9]{10}" title="0961111111"
              >
              <svg class="modal-form__icon " width="18px" height="18px">
                  <use href="./images/icons.svg#icon-phone-modal"></use>
@@ -505,9 +536,9 @@
         </form>
         </div>
     </div>
-    
+
     <script src="./js/modal.js" type="module"></script> 
-    <script defer src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/mobile-menu.js" type="module"></script> -->
 
 </body>
 </html>
